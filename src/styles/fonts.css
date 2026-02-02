@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "MartianMono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src:
+    local("MartianMono"),
+    url("/assets/fonts/martian-mono-variable-font.ttf") format("truetype");
+  /* 
+  font-variation-settings
+    "wght" 100 800
+    "wdth" 75 112.5
+  */
+}
+
+@property --font-wght {
+  syntax: "<number>";
+  initial-value: 400;
+  inherits: true;
+}
+
+@property --font-wdth {
+  syntax: "<number>";
+  initial-value: 100;
+  inherits: true;
+}

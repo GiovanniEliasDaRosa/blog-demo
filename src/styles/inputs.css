@@ -1,0 +1,17 @@
+input,
+button {
+  font-size: 1rem;
+}
+
+button,
+.button {
+  background-color: var(--button-background-color);
+
+  &:hover {
+    background-color: var(--button-background-color-hover);
+  }
+
+  &:is(:focus-visible, :active) {
+    background-color: var(--button-background-color-active);
+  }
+}

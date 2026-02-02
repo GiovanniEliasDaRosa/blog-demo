@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: MartianMono, "Courier New", monospace;
+
+  font-variation-settings:
+    "wght" var(--font-wght),
+    "wdth" var(--font-wdth);
+}
+
+html,
+body {
+  background-color: var(--background-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 0.25em solid var(--outline-color);
+  outline-offset: 0.25em;
+}

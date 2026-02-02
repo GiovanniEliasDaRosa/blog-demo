@@ -1,0 +1,22 @@
+:root {
+  --shadow-color: 40deg 40% 59%;
+  --shadow-low:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.46),
+    0px 1.9px 2.1px -2.5px hsl(var(--shadow-color) / 0.46);
+  --shadow-medium:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.65),
+    0px 9.3px 10.5px -2.5px hsl(var(--shadow-color) / 0.65);
+  --shadow-high:
+    0px 0.5px 0.6px hsl(var(--shadow-color) / 0.8),
+    0px 10px 11.3px -1.2px hsl(var(--shadow-color) / 0.8),
+    0px 44px 49.5px -2.5px hsl(var(--shadow-color) / 0.8);
+
+  --background-color: hsl(40, 100%, 98%);
+  --text-color: hsl(0, 0%, 5%);
+
+  --outline-color: hsl(200, 100%, 15%);
+
+  --button-background-color: hsl(38, 100%, 93%);
+  --button-background-color-hover: hsl(44, 100%, 88%);
+  --button-background-color-active: hsl(40, 100%, 80%);
+}

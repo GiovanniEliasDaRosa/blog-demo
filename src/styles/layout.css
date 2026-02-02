@@ -1,0 +1,57 @@
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+#root {
+  --padding-inline: 1rem;
+  --content-max-width: 100ch;
+  --breakout-max-width: 120ch;
+
+  --breakout-size: minmax(0, calc((var(--breakout-max-width) - var(--content-max-width)) / 2));
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] var(--breakout-size)
+    [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end]
+    var(--breakout-size) [breakout-end]
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+  gap: 1rem 0;
+
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-height: 100lvh;
+}
+
+:is(#root, .full_width) > :not(.breakout, .full_width) {
+  grid-column: content;
+}
+
+#root > .breakout {
+  grid-column: breakout;
+}
+
+#root > .full_width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+#root > .full_width.strech {
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.full_width.strech > * {
+  grid-column: full-width;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

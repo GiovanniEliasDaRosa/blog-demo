@@ -1,20 +1,29 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  function navLinkStyles({ isActive }) {
+    return styles.link + (isActive ? ` ${styles.active}` : "");
+  }
+
   return (
-    <header>
+    <header className={`${styles.header} full_width`}>
       <nav>
-        <Link to={"/"} className={styles.home}>
+        <Link to={"/"} className={`${styles.home}`}>
+          <img src="assets/icons/logo.svg" alt="" />
           Blog Demo
         </Link>
 
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <NavLink className={navLinkStyles} to={"/"}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <NavLink className={navLinkStyles} to={"/about"}>
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>

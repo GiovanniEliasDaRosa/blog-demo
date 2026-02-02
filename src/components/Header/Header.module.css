@@ -1,0 +1,57 @@
+.header {
+  padding: 1em;
+  background-color: hsl(40, 100%, 90%);
+  box-shadow: var(--shadow-low);
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+}
+
+.home,
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+.home {
+  font-size: 1.5rem;
+  --font-wght: 900;
+  --font-wdth: 112.5;
+  padding: 0.5em;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.home img {
+  height: 2em;
+}
+
+.link {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: hsl(40, 100%, 80%);
+
+  &:hover {
+    background-color: hsl(40, 100%, 70%);
+  }
+
+  &:is(:active, :focus-visible) {
+    background-color: hsl(40, 100%, 65%);
+  }
+
+  &.active {
+    background-color: hsl(40, 100%, 60%);
+  }
+}
