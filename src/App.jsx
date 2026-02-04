@@ -3,10 +3,11 @@ import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header";
+import { PostsProvider } from "./contexts/PostsContext";
 
 function App() {
   return (
-    <>
+    <PostsProvider>
       <BrowserRouter basename="/blog-demo/">
         <Header />
 
@@ -19,7 +20,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-    </>
+    </PostsProvider>
   );
 }
 
