@@ -1,0 +1,48 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(25em, 100%), 1fr));
+  gap: 1em;
+}
+
+.post {
+  text-decoration: none;
+  display: grid;
+  gap: 1em;
+
+  padding: 1em;
+  border-radius: 1em;
+  background-color: hsl(40, 100%, 95%);
+  box-shadow: var(--shadow-low);
+  transition: 0.25s ease-out;
+
+  &:hover {
+    background-color: hsl(40, 100%, 92%);
+    box-shadow: var(--shadow-medium);
+  }
+
+  &:is(:active, :focus-visible) {
+    background-color: hsl(40, 100%, 85%);
+  }
+}
+
+.post img {
+  width: 100%;
+  height: clamp(15em, 50vw, 20em);
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.postContent {
+  display: grid;
+  gap: 0.5em;
+}
+
+.postContent h3 {
+  --font-wght: 900;
+  --font-wdth: 112.5;
+}
+
+.postContent p {
+  --font-wght: 300;
+  --font-wdth: 112.5;
+}
