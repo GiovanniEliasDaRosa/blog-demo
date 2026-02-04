@@ -9,19 +9,19 @@ export default function Header() {
   return (
     <header className={`${styles.header} full_width`}>
       <nav>
-        <Link to={"/"} className={`${styles.home}`}>
-          <img src="assets/icons/logo.svg" alt="" />
+        <Link to="/" className={`${styles.home}`}>
+          <img src={`${import.meta.env.BASE_URL}assets/icons/logo.svg`} alt="" />
           Blog Demo
         </Link>
 
         <ul>
           <li>
-            <NavLink className={navLinkStyles} to={"/"}>
+            <NavLink className={navLinkStyles} to="/">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className={navLinkStyles} to={"/about"}>
+            <NavLink className={navLinkStyles} to="/about">
               About
             </NavLink>
           </li>
