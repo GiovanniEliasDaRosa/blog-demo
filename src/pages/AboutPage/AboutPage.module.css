@@ -1,0 +1,30 @@
+.section {
+  display: grid;
+  gap: 0.5em;
+}
+
+.image_links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(22ch, 100%), 1fr));
+  gap: 1em;
+}
+
+.image_links a {
+  display: grid;
+
+  text-align: center;
+  border-radius: 0.5em;
+  overflow: hidden;
+  overflow: clip;
+}
+
+.image_links span {
+  padding: 0.5em;
+}
+
+.image_links img {
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
