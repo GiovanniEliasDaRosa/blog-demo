@@ -1,0 +1,32 @@
+.post_img {
+  width: 100%;
+  height: clamp(20rem, 12rem + 32vw, 32rem);
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.header {
+  display: grid;
+  gap: 0.5em;
+  background-color: hsl(42, 39%, 86%);
+  padding-block: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tags > * {
+  padding: 0.25em 0.5em;
+  background-color: hsl(40, 100%, 92%);
+  border-radius: 1em;
+}
+
+.article {
+  display: grid;
+  gap: 0.3em;
+  line-height: 1.3em;
+  text-align: justify;
+}

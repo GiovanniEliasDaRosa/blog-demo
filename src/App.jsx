@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header";
 import { PostsProvider } from "./contexts/PostsContext";
+import PostsPage from "./pages/PostPage/PostPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/post/:id" element={<PostsPage />} />
 
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
