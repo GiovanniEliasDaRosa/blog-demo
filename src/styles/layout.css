@@ -6,8 +6,8 @@
   gap: 1em;
 
   --padding-inline: 1rem;
-  --content-max-width: 100ch;
-  --breakout-max-width: 120ch;
+  --content-max-width: 80ch;
+  --breakout-max-width: 100ch;
   --breakout-size: minmax(0, calc((var(--breakout-max-width) - var(--content-max-width)) / 2));
 }
 
@@ -21,10 +21,9 @@ main {
     minmax(var(--padding-inline), 1fr) [full-width-end];
   gap: 1rem 0;
 
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100lvh;
-  align-items: start;
+  align-content: start;
 }
 
 :is(main, .full_width) > :not(.breakout, .full_width) {
