@@ -7,7 +7,7 @@ export default function Header() {
   }
 
   return (
-    <header className={`${styles.header} full_width`}>
+    <header className={`${styles.header}`}>
       <nav>
         <Link to="/" className={`${styles.home}`}>
           <img src={`${import.meta.env.BASE_URL}assets/icons/logo.svg`} alt="" />

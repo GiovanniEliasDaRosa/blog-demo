@@ -2,12 +2,15 @@
   padding: 1em;
   background-color: hsl(40, 100%, 90%);
   box-shadow: var(--shadow-low);
+  width: 100%;
 }
 
 .header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
 }
 
 .header nav ul {

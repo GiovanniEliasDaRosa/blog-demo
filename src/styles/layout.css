@@ -3,15 +3,15 @@
   grid-template-rows: auto 1fr;
   min-height: 100vh;
   min-height: 100svh;
-}
+  gap: 1em;
 
-#root {
   --padding-inline: 1rem;
   --content-max-width: 100ch;
   --breakout-max-width: 120ch;
-
   --breakout-size: minmax(0, calc((var(--breakout-max-width) - var(--content-max-width)) / 2));
+}
 
+main {
   display: grid;
   grid-template-columns:
     [full-width-start] minmax(var(--padding-inline), 1fr)
@@ -24,34 +24,29 @@
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100lvh;
+  align-items: start;
 }
 
-:is(#root, .full_width) > :not(.breakout, .full_width) {
+:is(main, .full_width) > :not(.breakout, .full_width) {
   grid-column: content;
 }
 
-#root > .breakout {
+.breakout {
   grid-column: breakout;
 }
 
-#root > .full_width {
+.full_width {
   grid-column: full-width;
 
   display: grid;
   grid-template-columns: inherit;
 }
 
-#root > .full_width.strech {
+.full_width.strech {
   display: grid;
   grid-template-columns: inherit;
 }
 
 .full_width.strech > * {
   grid-column: full-width;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
 }
