@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { useParams } from "react-router";
-import { PostsContext } from "../../contexts/PostsContext";
-import NotFoundPage from "../NotFoundPage/NotFoundPage";
-import styles from "./PostPage.module.css";
+import { PostsContext } from "../../../contexts/PostsContext";
+import NotFoundPage from "../../NotFoundPage/NotFoundPage";
+import styles from "./Post.module.css";
 
 export default function PostPage() {
   const { postsState } = useContext(PostsContext);

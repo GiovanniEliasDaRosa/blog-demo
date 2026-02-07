@@ -4,7 +4,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header";
 import { PostsProvider } from "./contexts/PostsContext";
-import PostsPage from "./pages/PostPage/PostPage";
+import PostsPage from "./pages/Post/Show/Post";
 
 function App() {
   return (
