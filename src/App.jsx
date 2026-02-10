@@ -4,7 +4,8 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Header from "./components/Header/Header";
 import { PostsProvider } from "./contexts/PostsContext";
-import PostsPage from "./pages/Post/Show/Post";
+import ShowPost from "./pages/Post/Show/Post";
+import EditPost from "./pages/Post/Edit/Post";
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/post/:id" element={<PostsPage />} />
+
+            <Route path="/post/:id">
+              <Route path="" element={<ShowPost />} />
+              <Route path="edit" element={<EditPost />} />
+            </Route>
 
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

@@ -1,0 +1,13 @@
+.form {
+  display: grid;
+  gap: 1em;
+}
+
+.form_sections {
+  display: grid;
+  gap: 0.5em;
+}
+
+.save_button {
+  justify-self: end;
+}

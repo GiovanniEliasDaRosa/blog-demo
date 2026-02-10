@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { PostsContext } from "../../../contexts/PostsContext";
 import NotFoundPage from "../../NotFoundPage/NotFoundPage";
 import styles from "./Post.module.css";
@@ -20,6 +20,15 @@ export default function PostPage() {
 
   return (
     <>
+      <div className="main_links">
+        <Link className="button" to="/">
+          Go back to Home
+        </Link>
+        <Link className="button" relative="path" to="edit">
+          Edit
+        </Link>
+      </div>
+
       <img
         className={`${styles.post_img} breakout`}
         src={`${import.meta.env.BASE_URL}assets/images/${post.image}`}
