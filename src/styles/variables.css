@@ -16,7 +16,18 @@
 
   --outline-color: hsl(200, 100%, 15%);
 
+  /* Button */
   --button-background-color: hsl(38, 100%, 93%);
   --button-background-color-hover: hsl(44, 100%, 88%);
   --button-background-color-active: hsl(40, 100%, 80%);
+
+  /* Input */
+  --input-border-color: hsl(40, 77%, 39%);
+  --input-background-color: hsl(39, 100%, 95%);
+
+  --input-border-color-hover: hsl(40, 98%, 27%);
+  --input-background-color-hover: hsl(40, 100%, 89%);
+
+  --input-border-color-active: hsl(40, 100%, 12%);
+  --input-background-color-active: hsl(41, 100%, 93%);
 }

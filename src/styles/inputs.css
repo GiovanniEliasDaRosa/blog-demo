@@ -5,6 +5,12 @@ button {
 
 button,
 .button {
+  display: block;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
   background-color: var(--button-background-color);
 
   &:hover {
@@ -14,4 +20,27 @@ button,
   &:is(:focus-visible, :active) {
     background-color: var(--button-background-color-active);
   }
+}
+
+input,
+textarea {
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+  border: solid 0.1em var(--input-border-color);
+  background-color: var(--input-background-color);
+
+  &:hover {
+    background-color: var(--input-background-color-hover);
+    border-color: var(--input-border-color-hover);
+  }
+
+  &:is(:focus-visible, :active) {
+    background-color: var(--input-background-color-active);
+    border-color: var(--input-border-color-active);
+  }
+}
+
+textarea {
+  resize: vertical;
 }
