@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../Post.module.css";
 
-export default function Form({ post, postsDisatch }) {
+export default function Form({ post, postsDisatch, setActiveToast }) {
   const [title, setTitle] = useState(post.title);
   const [shortDescription, setShortDescription] = useState(post.shortDescription);
   const [article, setArticle] = useState(post.article.join("\n"));
@@ -29,6 +29,7 @@ export default function Form({ post, postsDisatch }) {
     };
 
     postsDisatch({ state: "edit", payload: editingPost });
+    setActiveToast(true);
   }
 
   return (

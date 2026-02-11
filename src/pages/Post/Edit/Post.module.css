@@ -11,3 +11,41 @@
 .save_button {
   justify-self: end;
 }
+
+.toast {
+  padding: 1em;
+  background-color: hsl(146, 100%, 86%);
+  border-radius: 0 0 0.5em 0.5em;
+  display: block;
+  box-shadow: 0 0 0.5em hsla(0, 0%, 0%, 0.4);
+
+  position: fixed;
+  top: 0;
+
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+
+  width: min(var(--content-max-width), 100%);
+  animation:
+    0.5s toast_in ease-out forwards,
+    0.5s toast_out ease-out forwards 2s;
+}
+
+@keyframes toast_in {
+  0% {
+    translate: 0 -100%;
+  }
+  100% {
+    translate: 0 0%;
+  }
+}
+
+@keyframes toast_out {
+  0% {
+    translate: 0 0%;
+  }
+  100% {
+    translate: 0 -100%;
+  }
+}
