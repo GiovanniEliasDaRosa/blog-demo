@@ -21,6 +21,11 @@ export default function Form({ post, postsDisatch, setActiveToast }) {
   function handleSubmit(e) {
     e.preventDefault();
 
+    // At least one of the fields is empty, if so just do nothing
+    if (title.trim() == "" || shortDescription.trim() == "" || article.trim() == "") {
+      return;
+    }
+
     let editingPost = {
       ...post,
       title: title,
@@ -36,7 +41,21 @@ export default function Form({ post, postsDisatch, setActiveToast }) {
     <form onSubmit={handleSubmit} id="save_edit_post" className={styles.form}>
       <div className={styles.form_sections}>
         <label htmlFor="title">Title</label>
-        <input type="text" name="title" id="title" value={title} onChange={handleTitleChange} />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          value={title}
+          onChange={handleTitleChange}
+          minLength={1}
+        />
+
+        {/* Show error message on empty value */}
+        {title.trim() == "" ? (
+          <p className={styles.error_message}>The title should have at least 1 character</p>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className={styles.form_sections}>
@@ -47,7 +66,17 @@ export default function Form({ post, postsDisatch, setActiveToast }) {
           id="short_description"
           value={shortDescription}
           onChange={handleShortDescriptionChange}
+          minLength={1}
         />
+
+        {/* Show error message on empty value */}
+        {shortDescription.trim() == "" ? (
+          <p className={styles.error_message}>
+            The short description should have at least 1 character
+          </p>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className={styles.form_sections}>
@@ -57,7 +86,15 @@ export default function Form({ post, postsDisatch, setActiveToast }) {
           id="article"
           value={article}
           onChange={handleArticleChange}
+          minLength={1}
         ></textarea>
+
+        {/* Show error message on empty value */}
+        {article.trim() == "" ? (
+          <p className={styles.error_message}>The article should have at least 1 character</p>
+        ) : (
+          ""
+        )}
       </div>
 
       <button className={styles.save_button}>Save changes</button>

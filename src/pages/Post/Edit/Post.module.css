@@ -12,6 +12,10 @@
   justify-self: end;
 }
 
+.error_message {
+  color: hsl(3, 100%, 32%);
+}
+
 .toast {
   padding: 1em;
   background-color: hsl(146, 100%, 86%);
