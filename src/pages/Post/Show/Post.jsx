@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router";
 import { PostsContext } from "../../../contexts/PostsContext";
 import NotFoundPage from "../../NotFoundPage/NotFoundPage";
 import styles from "./Post.module.css";
+import BetterImage from "../../../components/BetterImage/BetterImage";
 
 export default function PostPage() {
   const { postsState } = useContext(PostsContext);
@@ -29,11 +30,7 @@ export default function PostPage() {
         </Link>
       </div>
 
-      <img
-        className={`${styles.post_img} breakout`}
-        src={`${import.meta.env.BASE_URL}assets/images/${post.image}`}
-        alt=""
-      />
+      <BetterImage className={`${styles.post_img} breakout`} src={`images/${post.image}`} alt="" />
 
       <div className={`${styles.header} full_width`}>
         <div className={styles.tags}>

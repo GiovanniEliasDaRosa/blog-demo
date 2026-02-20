@@ -1,4 +1,5 @@
 import styles from "./AboutPage.module.css";
+import BetterImage from "../../components/BetterImage/BetterImage";
 
 export default function AboutPage() {
   return (
@@ -17,28 +18,28 @@ export default function AboutPage() {
 
         <div className={styles.image_links}>
           <a className="button" href="https://unsplash.com/photos/london-bridge-london-Q6UehpkBSnQ">
-            <img src={`${import.meta.env.BASE_URL}assets/images/london.png`} alt="" />
+            <BetterImage src="images/london.png" alt="" />
             <span>Photo by Charles Postiaux</span>
           </a>
           <a
             className="button"
             href="https://unsplash.com/photos/statue-of-liberty-new-york-under-white-and-blue-cloudy-skies-PeFk7fzxTdk"
           >
-            <img src={`${import.meta.env.BASE_URL}assets/images/new-york.png`} alt="" />
+            <BetterImage src="images/new-york.png" alt="" />
             <span>Photo by Ferdinand Stöhr</span>
           </a>
           <a
             className="button"
             href="https://unsplash.com/photos/cityscape-photo-during-daytime-hIKVSVKH7No"
           >
-            <img src={`${import.meta.env.BASE_URL}assets/images/new-zealand.png`} alt="" />
+            <BetterImage src="images/new-zealand.png" alt="" />
             <span>Photo by Dan Freeman</span>
           </a>
           <a
             className="button"
             href="https://unsplash.com/photos/eiffel-tower-paris-france-nnzkZNYWHaU"
           >
-            <img src={`${import.meta.env.BASE_URL}assets/images/paris.png`} alt="" />
+            <BetterImage src="images/paris.png" alt="" />
             <span>Photo by Chris Karidis</span>
           </a>
         </div>
