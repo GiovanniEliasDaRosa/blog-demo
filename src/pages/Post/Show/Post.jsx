@@ -30,7 +30,11 @@ export default function PostPage() {
         </Link>
       </div>
 
-      <BetterImage className={`${styles.post_img} breakout`} src={`images/${post.image}`} alt="" />
+      <BetterImage
+        className={`${styles.post_img} breakout`}
+        src={`images/${post.image.src}`}
+        alt={post.image.alt}
+      />
 
       <div className={`${styles.header} full_width`}>
         <div className={styles.tags}>

@@ -25,7 +25,12 @@
       "Error quaerat dolores facilis qui ullam ea optio dolore ut deserunt odio, sed non recusandae molestias quibusdam vero eaque nesciunt! Laudantium corrupti expedita ut sequi impedit numquam culpa in voluptatibus!",
       "Facilis eos delectus fuga nostrum dolorum! Laboriosam totam quaerat a at voluptatibus ab, quod labore maiores dicta cumque nihil expedita minima, ratione quas, reprehenderit aliquam tenetur! Cum, reprehenderit. Quisquam, iste."
     ],
-    "image": "london.png",
+    "image": {
+      "src": "london.png",
+      "alt": "Tower Bridge, London, United Kingdom",
+      "author": "Charles Postiaux",
+      "href": "https://unsplash.com/photos/london-bridge-london-Q6UehpkBSnQ"
+    },
     "tags": ["lorem", "ipsum"]
   },
   {
@@ -53,7 +58,12 @@
       "Itaque officiis necessitatibus laboriosam, atque quia cupiditate saepe quidem ea impedit quae repudiandae quisquam amet ut, praesentium ab optio ullam molestiae corporis enim? Commodi error reprehenderit corrupti similique corporis rem?",
       "Suscipit dolorum tempore aliquid sunt pariatur libero rerum quasi quibusdam cupiditate sequi! Eos, molestiae in id aut unde nemo, ut iure itaque, commodi cum blanditiis? Voluptatem nisi tempore mollitia enim."
     ],
-    "image": "new-york.png",
+    "image": {
+      "src": "new-york.png",
+      "alt": "Statue of Liberty, New York under white and blue cloudy skies",
+      "author": "Ferdinand Stöhr",
+      "href": "https://unsplash.com/photos/statue-of-liberty-new-york-under-white-and-blue-cloudy-skies-PeFk7fzxTdk"
+    },
     "tags": ["lorem", "dolor"]
   },
   {
@@ -79,7 +89,12 @@
       "Fugiat, ea magni eum temporibus distinctio iure adipisci nihil accusamus quisquam possimus iusto assumenda. Impedit illum maiores praesentium saepe? Sapiente praesentium a ut quis voluptates porro ipsa blanditiis at doloremque.",
       "Magni tenetur libero eos ut. Fugiat dolores earum quaerat inventore ab beatae esse modi eos doloremque cupiditate! Maiores inventore quod velit est molestias, eos repellendus similique non adipisci molestiae eaque?"
     ],
-    "image": "new-zealand.png",
+    "image": {
+      "src": "new-zealand.png",
+      "alt": "Cityscape photo in Auckland, New Zealand",
+      "author": "Dan Freeman",
+      "href": "https://unsplash.com/photos/cityscape-photo-during-daytime-hIKVSVKH7No"
+    },
     "tags": ["lorem", "amet"]
   },
   {
@@ -117,7 +132,12 @@
       "Dolor culpa fuga quis inventore corrupti officiis iste temporibus dolores doloribus exercitationem vitae quo ipsam quasi esse placeat saepe, tempore, porro est ea quibusdam dolorem? Error ullam ab optio quia!",
       "Dolorum blanditiis magnam quisquam facilis officia esse, dolorem consequatur, ullam amet modi error, exercitationem omnis ab? Minima quia unde dignissimos, odit earum tenetur dolorem maxime exercitationem corporis quas atque non?"
     ],
-    "image": "paris.png",
+    "image": {
+      "src": "paris.png",
+      "alt": "Eiffel Tower, Paris, France",
+      "author": "Chris Karidis",
+      "href": "https://unsplash.com/photos/eiffel-tower-paris-france-nnzkZNYWHaU"
+    },
     "tags": ["lorem", "ipsum"]
   }
 ]
